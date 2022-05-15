@@ -1,0 +1,147 @@
+body {
+    background-color: black;
+}
+
+.slider{
+    max-width: 30%;
+    position: relative;
+    margin: auto;
+    height: 40%;
+    margin-bottom: 3%;
+}
+
+.item {
+    height: 24rem;
+}
+
+.slider .item img {
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.container-text-dots {
+    display: flex;
+    max-width: 30%;
+    position: relative;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.text {
+    color: white;
+    margin: auto 0;
+    padding-bottom: 1rem;
+}
+
+.slider-dots {
+    margin: auto 0;
+        }
+
+.slider-dot {
+    display: inline-block;
+    cursor: pointer !important;
+    height: 12px;
+    width: 12px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    padding-bottom: 1rem;
+    padding-right: 0.3rem;
+}
+
+.slider-dot:hover > .slider-dots-item {
+    background-color: white;
+    border: solid;
+    border-color: white;
+    height: 12px;
+    width: 12px;
+}
+
+.slider-dots-item{
+    cursor: pointer !important;
+    height: 12px;
+    width: 12px;
+    background-color: rgb(70, 70, 206);
+    border-radius: 50%;
+    display: inline-block;
+    border: solid rgb(70, 70, 206);
+}
+
+.slider-dots-item:hover {
+    background-color: white;
+    border: solid;
+    border-color: white;
+    height: 12px;
+    width: 12px;
+}
+
+.active {
+    background-color: transparent;
+    border: solid;
+    border-color: rgb(79, 79, 239);
+}
+
+.slider-dot:hover > .active {
+    background-color: transparent;
+    border: solid;
+    border-color: white;
+}
+
+.active:hover {
+    background-color: transparent;
+    border: solid;
+    border-color: white;
+}
+
+.slide-text {
+    animation-name: text;
+    animation-duration: 3s;
+    -webkit-animation-name: text;
+    -webkit-animation-duration: 3s;
+}
+
+@keyframes text {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes text {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
