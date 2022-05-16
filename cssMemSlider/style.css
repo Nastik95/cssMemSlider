@@ -6,12 +6,11 @@ body {
     max-width: 30%;
     position: relative;
     margin: auto;
-    height: 40%;
-    margin-bottom: 3%;
+    height: 40rem;
 }
 
 .item {
-    height: 24rem;
+    height: 35rem;
 }
 
 .slider .item img {
@@ -148,17 +147,29 @@ body {
 }
 
 
+@media (min-width: 768px) and (max-width: 1279px) {
+    
+    .slider {
+        max-width: 70%;
+        position: relative;
+        margin: auto;
+        height: 40rem;
+        margin-bottom: 3%;
+    }
+}
+
+
 @media (max-width: 767.98px) {
     .slider{
         max-width: 90%;
         position: relative;
         margin: auto;
-        height: 35%;
+        height: 17rem;
         margin-bottom: 2rem;
     }
     
     .item {
-        height: 20rem;
+        height: 100%;
     }
     
     .slider .item img {
@@ -175,18 +186,19 @@ body {
     .container-text-dots {
         display: flex;
         flex-direction: column-reverse;
-        max-width: 30%;
+        max-width: 90%;
         position: relative;
-        margin: 0 auto;
         justify-content: space-between;
         align-items: center;
+        margin-right: 6%;
+        margin-left: 6%;
     }
 
     .text {
         color: white;
         text-align: left;
         padding-bottom: 1rem;
-        margin-left: -165%;
+        width: 100%;
     }
 }
 
