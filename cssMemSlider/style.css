@@ -27,6 +27,13 @@ body {
       height: 105vh;
   }
 
+  .link {
+      margin-top: 40px;
+      text-decoration: solid;
+      color: aliceblue;
+      font-size: 40px;
+  }
+
   .radio {
     display: none;
   }
@@ -44,7 +51,7 @@ body {
   .img-slider {
       width: 100%;
       max-width: 41rem;
-      height: 38rem;
+      height: 30rem;
       transition: 0.5s;
       display: flex;
       flex-wrap: nowrap;
