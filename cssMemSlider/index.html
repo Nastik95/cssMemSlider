@@ -8,49 +8,48 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="slider">
-        <div class="item">
-            <img src="../cssMemSlider/assets/img/chereshunesi.jpeg" alt="first slide">
+<div class="container">
+        <input type="radio" name="hidden-radio" id="dot1" class="radio" checked>
+        <input type="radio" name="hidden-radio" id="dot2" class="radio">
+        <input type="radio" name="hidden-radio" id="dot3" class="radio">
+        <input type="radio" name="hidden-radio" id="dot4" class="radio">
+        <div class="slider-container">
+    <div class="img-slider">
+        <div class="img-container">
+            <img src="../cssMemSlider/assets/img/chereshunesi.jpeg" alt="first slide" class="first-img">
         </div>
 
-        <div class="item">
-            <img src="../cssMemSlider/assets/img/natasha.jpeg" alt="second slide">
+        <div class="img-container">
+            <img src="../cssMemSlider/assets/img/natasha.jpeg" alt="second slide" class="second-img">
         </div>
 
-        <div class="item">
-            <img src="../cssMemSlider/assets/img/priemlemo.jpeg" alt="third slide">
+        <div class="img-container">
+            <img src="../cssMemSlider/assets/img/priemlemo.jpeg" alt="third slide" class="third-img">
         </div>
 
-        <div class="item">
-            <img src="../cssMemSlider/assets/img/uit.jpeg" alt="fourth slide">
+        <div class="img-container">
+            <img src="../cssMemSlider/assets/img/uit.jpeg" alt="fourth slide" class="fourth-img">
         </div>
 
     </div>
 
     <div class="container-text-dots">
         <div class="text">
-            <p class="slide-text">Вring me a cherry!</p>
-            <p class="slide-text">Natasha, wake up!</p>
-            <p class="slide-text">Acceptable</p>
-            <p class="slide-text">öö</p>
+            <div class="slide-text-container"><p class="slide-text">Вring me a cherry!</p></div>
+            <div class="slide-text-container"><p class="slide-text">Natasha, wake up!</p></div>
+            <div class="slide-text-container"><p class="slide-text">Acceptable</p></div>
+            <div class="slide-text-container"><p class="slide-text">öö</p></div>
         </div>
 
         <div class="slider-dots">
-            <div class="slider-dot" onclick="currentSlide(1)">
-            <span class="slider-dots-item"></span>
-            </div>
-            <div class="slider-dot" onclick="currentSlide(2)">
-            <span class="slider-dots-item"></span>
-        </div>
-        <div class="slider-dot" onclick="currentSlide(3)">
-            <span class="slider-dots-item"></span>
-        </div>
-        <div class="slider-dot" onclick="currentSlide(4)">
-            <span class="slider-dots-item"></span>
-        </div>
+            <label for="dot1" class="slider-dot"><span class="dots"></span></label>
+            <label for="dot2" class="slider-dot"><span class="dots"></span></label>
+            <label for="dot3" class="slider-dot"><span class="dots"></span></label>
+            <label for="dot4" class="slider-dot"><span class="dots"></span></label>
         </div>
 
     </div>
-    <script src="./script.js"></script>
+</div>
+    </div>
 </body>
 </html>
